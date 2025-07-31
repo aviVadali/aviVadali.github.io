@@ -1,706 +1,87 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-  <meta charset="UTF-8">
-  <title>Arnauld Martinez Portfolio</title>
-  <link rel="stylesheet" href="styles_research.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap" rel="stylesheet">
-</head>
+<html lang="en">
 
-<body>
-    <header>
-        <nav class="navbar">
-            <div class="navbar-container">
-                <div class="navbar-left">
-                    <a href="index.html" class="nav-logo">Arnauld Martinez</a>
-                </div>
-                <div class="navbar-right">
-                    <a href="research.html" class="nav-link active">Research</a>
-                    <a href="work.html" class="nav-link">Work Experience</a>
-                    <a href="projects.html" class="nav-link">Projects</a>
-                    <a href="resources/resume.pdf" class="nav-link">CV</a>
-                </div>
-            </div>
-        </nav>
-    </header>
-  <main>
-    <div class="main-container">
-        <section class="research-entry">
-            <h2>Reinforcement Learning for Fixed-Wing UAV Navigation in Turbulent Environments</h2>
-            <p class="research-meta">
-                <span class="left-meta">Caltech | Prof. Mory Gharib</span>
-                <span class="right-meta">September 2024 – Present</span>
-              </p>
-            <p class="research-text">
-                I worked under Professor Mory Gharib to design and build the embedded systems onboard
-                a fixed-wing UAV aircraft. I developed a custom handshake between the Cube Orange Plus
-                flight computer and the Jetson Orin Nano on-board computer to reliably transmit ROS
-                messages in turbulent environments. I also helped design and integrate low-cost pitot
-                tubes capable of measuring wind speed at five distributed locations across the airframe.
-                This data fed into a machine learning model we developed to estimate wind dynamics in real time.
-            </p>
-        </section>
-
-        <hr class="divider-line">
-
-        <section class="research-entry">
-            <h2>Improving Spacecraft Fault Diagnosis Using Active Sensing and Sensor Failure Modeling</h2>
-            <p class="research-meta">
-                <span class="left-meta">Caltech | Prof. Soon-Jo Chung</span>
-                <span class="right-meta">June – September 2023</span>
-              </p>
-            <div class="research-images">
-                <img src="resources/research/rgb_to_ir.png" class="satellite-img">
-                <img src="resources/research/satellite.png" class="satellite-img">
-            </div>
-            <p class="research-text">
-                I worked under Professor Soon-Jo Chung to build a physics simulation that models
-                spacecraft kinematics and actuator systems as Markov Decision Problems. I expanded
-                the existing 3-DOF spacecraft model to a 6-DOF model, capable of modeling the
-                spacecraft's attitude and positional state. I integrated this physics engine into
-                the lab's existing fault detection, isolation, and recovery algorithms to identify
-                faulty reaction wheels and actuator systems onboard the spacecraft.
-                <br>
-                <br>
-                Additionally, I developed a cycleGAN model to convert RGB images taken
-                onboard the spacecraft into infrared images. These images were then fed into the 
-                lab's existing FDIR algorithms to isolate and recover from various camera failure
-                modes, including hot pixels and solar glare. The final report for this project 
-                can be found <a href="resources/research/surf_report.pdf" class="plink">here</a>.
-            </p>
-        </section>
-
-        <hr class="divider-line">
-
-        <section class="research-entry">
-            <h2>Machine Learning for Analyte Identification via Raman Spectroscopy</h2>
-            <p class="research-meta">
-                <span class="left-meta">Caltech | Prof. Lu Wei</span>
-                <span class="right-meta">June – September 2022</span>
-              </p>
-            <p class="research-text">
-                I worked with Professor Lu Wei to develop a data pipeline for analyzing
-                the Raman spectra of unknown analytes in food samples. I designed a preprocessing
-                and augmentation workflow to generate a robust spectral dataset, which
-                captured the vibrational signatures of a variety of non-homogeneous foods.
-                Using this dataset, I trained and evaluated both k-nearest neighbors (kNN)
-                and random forest classifiers to identify food samples based on their
-                Raman spectra. The resulting models achieved up to 88% classification accuracy.
-            </p>
-        </section>
-
-    </div>
-
-  </main>
-  
-  <footer class="footer">
-    <p>© 2025 Arnauld Martinez. All rights reserved.</p>
-  </footer>
-  
- 
-</body></html>
 <head>
-  <meta charset="UTF-8">
-  <title>Arnauld Martinez Portfolio</title>
-  <link rel="stylesheet" href="styles_research.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <nav class="navbar">
-            <div class="navbar-container">
-                <div class="navbar-left">
-                    <a href="index.html" class="nav-logo">Arnauld Martinez</a>
-                </div>
-                <div class="navbar-right">
-                    <a href="research.html" class="nav-link active">Research</a>
-                    <a href="work.html" class="nav-link">Work Experience</a>
-                    <a href="projects.html" class="nav-link">Projects</a>
-                    <a href="resources/resume.pdf" class="nav-link">CV</a>
-                </div>
-            </div>
-        </nav>
-    </header>
-  <main>
-    <div class="main-container">
-        <section class="research-entry">
-            <h2>Reinforcement Learning for Fixed-Wing UAV Navigation in Turbulent Environments</h2>
-            <p class="research-meta">
-                <span class="left-meta">Caltech | Prof. Mory Gharib</span>
-                <span class="right-meta">September 2024 – Present</span>
-              </p>
-            <p class="research-text">
-                I worked under Professor Mory Gharib to design and build the embedded systems onboard
-                a fixed-wing UAV aircraft. I developed a custom handshake between the Cube Orange Plus
-                flight computer and the Jetson Orin Nano on-board computer to reliably transmit ROS
-                messages in turbulent environments. I also helped design and integrate low-cost pitot
-                tubes capable of measuring wind speed at five distributed locations across the airframe.
-                This data fed into a machine learning model we developed to estimate wind dynamics in real time.
-            </p>
-        </section>
-
-        <hr class="divider-line">
-
-        <section class="research-entry">
-            <h2>Improving Spacecraft Fault Diagnosis Using Active Sensing and Sensor Failure Modeling</h2>
-            <p class="research-meta">
-                <span class="left-meta">Caltech | Prof. Soon-Jo Chung</span>
-                <span class="right-meta">June – September 2023</span>
-              </p>
-            <div class="research-images">
-                <img src="resources/research/rgb_to_ir.png" class="satellite-img">
-                <img src="resources/research/satellite.png" class="satellite-img">
-            </div>
-            <p class="research-text">
-                I worked under Professor Soon-Jo Chung to build a physics simulation that models
-                spacecraft kinematics and actuator systems as Markov Decision Problems. I expanded
-                the existing 3-DOF spacecraft model to a 6-DOF model, capable of modeling the
-                spacecraft's attitude and positional state. I integrated this physics engine into
-                the lab's existing fault detection, isolation, and recovery algorithms to identify
-                faulty reaction wheels and actuator systems onboard the spacecraft.
-                <br>
-                <br>
-                Additionally, I developed a cycleGAN model to convert RGB images taken
-                onboard the spacecraft into infrared images. These images were then fed into the 
-                lab's existing FDIR algorithms to isolate and recover from various camera failure
-                modes, including hot pixels and solar glare. The final report for this project 
-                can be found <a href="resources/research/surf_report.pdf" class="plink">here</a>.
-            </p>
-        </section>
-
-        <hr class="divider-line">
-
-        <section class="research-entry">
-            <h2>Machine Learning for Analyte Identification via Raman Spectroscopy</h2>
-            <p class="research-meta">
-                <span class="left-meta">Caltech | Prof. Lu Wei</span>
-                <span class="right-meta">June – September 2022</span>
-              </p>
-            <p class="research-text">
-                I worked with Professor Lu Wei to develop a data pipeline for analyzing
-                the Raman spectra of unknown analytes in food samples. I designed a preprocessing
-                and augmentation workflow to generate a robust spectral dataset, which
-                captured the vibrational signatures of a variety of non-homogeneous foods.
-                Using this dataset, I trained and evaluated both k-nearest neighbors (kNN)
-                and random forest classifiers to identify food samples based on their
-                Raman spectra. The resulting models achieved up to 88% classification accuracy.
-            </p>
-        </section>
-
-    </div>
-
-  </main>
-  
-  <footer class="footer">
-    <p>© 2025 Arnauld Martinez. All rights reserved.</p>
-  </footer>
-  
- 
-</body>
-<header>
-        <nav class="navbar">
-            <div class="navbar-container">
-                <div class="navbar-left">
-                    <a href="index.html" class="nav-logo">Arnauld Martinez</a>
-                </div>
-                <div class="navbar-right">
-                    <a href="research.html" class="nav-link active">Research</a>
-                    <a href="work.html" class="nav-link">Work Experience</a>
-                    <a href="projects.html" class="nav-link">Projects</a>
-                    <a href="resources/resume.pdf" class="nav-link">CV</a>
-                </div>
-            </div>
-        </nav>
-    </header>
-<nav class="navbar">
-            <div class="navbar-container">
-                <div class="navbar-left">
-                    <a href="index.html" class="nav-logo">Arnauld Martinez</a>
-                </div>
-                <div class="navbar-right">
-                    <a href="research.html" class="nav-link active">Research</a>
-                    <a href="work.html" class="nav-link">Work Experience</a>
-                    <a href="projects.html" class="nav-link">Projects</a>
-                    <a href="resources/resume.pdf" class="nav-link">CV</a>
-                </div>
-            </div>
-        </nav>
-<div class="navbar-container">
-                <div class="navbar-left">
-                    <a href="index.html" class="nav-logo">Arnauld Martinez</a>
-                </div>
-                <div class="navbar-right">
-                    <a href="research.html" class="nav-link active">Research</a>
-                    <a href="work.html" class="nav-link">Work Experience</a>
-                    <a href="projects.html" class="nav-link">Projects</a>
-                    <a href="resources/resume.pdf" class="nav-link">CV</a>
-                </div>
-            </div>
-<div class="navbar-left">
-                    <a href="index.html" class="nav-logo">Arnauld Martinez</a>
-                </div>
-<a href="index.html" class="nav-logo">Arnauld Martinez</a>
-<div class="navbar-left">
-                    <a href="index.html" class="nav-logo">Arnauld Martinez</a>
-                </div>
-<div class="navbar-right">
-                    <a href="research.html" class="nav-link active">Research</a>
-                    <a href="work.html" class="nav-link">Work Experience</a>
-                    <a href="projects.html" class="nav-link">Projects</a>
-                    <a href="resources/resume.pdf" class="nav-link">CV</a>
-                </div>
-<a href="research.html" class="nav-link active">Research</a>
-<a href="work.html" class="nav-link">Work Experience</a>
-<a href="projects.html" class="nav-link">Projects</a>
-<a href="resources/resume.pdf" class="nav-link">CV</a>
-<div class="navbar-right">
-                    <a href="research.html" class="nav-link active">Research</a>
-                    <a href="work.html" class="nav-link">Work Experience</a>
-                    <a href="projects.html" class="nav-link">Projects</a>
-                    <a href="resources/resume.pdf" class="nav-link">CV</a>
-                </div>
-<div class="navbar-container">
-                <div class="navbar-left">
-                    <a href="index.html" class="nav-logo">Arnauld Martinez</a>
-                </div>
-                <div class="navbar-right">
-                    <a href="research.html" class="nav-link active">Research</a>
-                    <a href="work.html" class="nav-link">Work Experience</a>
-                    <a href="projects.html" class="nav-link">Projects</a>
-                    <a href="resources/resume.pdf" class="nav-link">CV</a>
-                </div>
-            </div>
-<nav class="navbar">
-            <div class="navbar-container">
-                <div class="navbar-left">
-                    <a href="index.html" class="nav-logo">Arnauld Martinez</a>
-                </div>
-                <div class="navbar-right">
-                    <a href="research.html" class="nav-link active">Research</a>
-                    <a href="work.html" class="nav-link">Work Experience</a>
-                    <a href="projects.html" class="nav-link">Projects</a>
-                    <a href="resources/resume.pdf" class="nav-link">CV</a>
-                </div>
-            </div>
-        </nav>
-<header>
-        <nav class="navbar">
-            <div class="navbar-container">
-                <div class="navbar-left">
-                    <a href="index.html" class="nav-logo">Arnauld Martinez</a>
-                </div>
-                <div class="navbar-right">
-                    <a href="research.html" class="nav-link active">Research</a>
-                    <a href="work.html" class="nav-link">Work Experience</a>
-                    <a href="projects.html" class="nav-link">Projects</a>
-                    <a href="resources/resume.pdf" class="nav-link">CV</a>
-                </div>
-            </div>
-        </nav>
-    </header>
-<main>
-    <div class="main-container">
-        <section class="research-entry">
-            <h2>Reinforcement Learning for Fixed-Wing UAV Navigation in Turbulent Environments</h2>
-            <p class="research-meta">
-                <span class="left-meta">Caltech | Prof. Mory Gharib</span>
-                <span class="right-meta">September 2024 – Present</span>
-              </p>
-            <p class="research-text">
-                I worked under Professor Mory Gharib to design and build the embedded systems onboard
-                a fixed-wing UAV aircraft. I developed a custom handshake between the Cube Orange Plus
-                flight computer and the Jetson Orin Nano on-board computer to reliably transmit ROS
-                messages in turbulent environments. I also helped design and integrate low-cost pitot
-                tubes capable of measuring wind speed at five distributed locations across the airframe.
-                This data fed into a machine learning model we developed to estimate wind dynamics in real time.
-            </p>
-        </section>
-
-        <hr class="divider-line">
-
-        <section class="research-entry">
-            <h2>Improving Spacecraft Fault Diagnosis Using Active Sensing and Sensor Failure Modeling</h2>
-            <p class="research-meta">
-                <span class="left-meta">Caltech | Prof. Soon-Jo Chung</span>
-                <span class="right-meta">June – September 2023</span>
-              </p>
-            <div class="research-images">
-                <img src="resources/research/rgb_to_ir.png" class="satellite-img">
-                <img src="resources/research/satellite.png" class="satellite-img">
-            </div>
-            <p class="research-text">
-                I worked under Professor Soon-Jo Chung to build a physics simulation that models
-                spacecraft kinematics and actuator systems as Markov Decision Problems. I expanded
-                the existing 3-DOF spacecraft model to a 6-DOF model, capable of modeling the
-                spacecraft's attitude and positional state. I integrated this physics engine into
-                the lab's existing fault detection, isolation, and recovery algorithms to identify
-                faulty reaction wheels and actuator systems onboard the spacecraft.
-                <br>
-                <br>
-                Additionally, I developed a cycleGAN model to convert RGB images taken
-                onboard the spacecraft into infrared images. These images were then fed into the 
-                lab's existing FDIR algorithms to isolate and recover from various camera failure
-                modes, including hot pixels and solar glare. The final report for this project 
-                can be found <a href="resources/research/surf_report.pdf" class="plink">here</a>.
-            </p>
-        </section>
-
-        <hr class="divider-line">
-
-        <section class="research-entry">
-            <h2>Machine Learning for Analyte Identification via Raman Spectroscopy</h2>
-            <p class="research-meta">
-                <span class="left-meta">Caltech | Prof. Lu Wei</span>
-                <span class="right-meta">June – September 2022</span>
-              </p>
-            <p class="research-text">
-                I worked with Professor Lu Wei to develop a data pipeline for analyzing
-                the Raman spectra of unknown analytes in food samples. I designed a preprocessing
-                and augmentation workflow to generate a robust spectral dataset, which
-                captured the vibrational signatures of a variety of non-homogeneous foods.
-                Using this dataset, I trained and evaluated both k-nearest neighbors (kNN)
-                and random forest classifiers to identify food samples based on their
-                Raman spectra. The resulting models achieved up to 88% classification accuracy.
-            </p>
-        </section>
-
-    </div>
-
-  </main>
-<div class="main-container">
-        <section class="research-entry">
-            <h2>Reinforcement Learning for Fixed-Wing UAV Navigation in Turbulent Environments</h2>
-            <p class="research-meta">
-                <span class="left-meta">Caltech | Prof. Mory Gharib</span>
-                <span class="right-meta">September 2024 – Present</span>
-              </p>
-            <p class="research-text">
-                I worked under Professor Mory Gharib to design and build the embedded systems onboard
-                a fixed-wing UAV aircraft. I developed a custom handshake between the Cube Orange Plus
-                flight computer and the Jetson Orin Nano on-board computer to reliably transmit ROS
-                messages in turbulent environments. I also helped design and integrate low-cost pitot
-                tubes capable of measuring wind speed at five distributed locations across the airframe.
-                This data fed into a machine learning model we developed to estimate wind dynamics in real time.
-            </p>
-        </section>
-
-        <hr class="divider-line">
-
-        <section class="research-entry">
-            <h2>Improving Spacecraft Fault Diagnosis Using Active Sensing and Sensor Failure Modeling</h2>
-            <p class="research-meta">
-                <span class="left-meta">Caltech | Prof. Soon-Jo Chung</span>
-                <span class="right-meta">June – September 2023</span>
-              </p>
-            <div class="research-images">
-                <img src="resources/research/rgb_to_ir.png" class="satellite-img">
-                <img src="resources/research/satellite.png" class="satellite-img">
-            </div>
-            <p class="research-text">
-                I worked under Professor Soon-Jo Chung to build a physics simulation that models
-                spacecraft kinematics and actuator systems as Markov Decision Problems. I expanded
-                the existing 3-DOF spacecraft model to a 6-DOF model, capable of modeling the
-                spacecraft's attitude and positional state. I integrated this physics engine into
-                the lab's existing fault detection, isolation, and recovery algorithms to identify
-                faulty reaction wheels and actuator systems onboard the spacecraft.
-                <br>
-                <br>
-                Additionally, I developed a cycleGAN model to convert RGB images taken
-                onboard the spacecraft into infrared images. These images were then fed into the 
-                lab's existing FDIR algorithms to isolate and recover from various camera failure
-                modes, including hot pixels and solar glare. The final report for this project 
-                can be found <a href="resources/research/surf_report.pdf" class="plink">here</a>.
-            </p>
-        </section>
-
-        <hr class="divider-line">
-
-        <section class="research-entry">
-            <h2>Machine Learning for Analyte Identification via Raman Spectroscopy</h2>
-            <p class="research-meta">
-                <span class="left-meta">Caltech | Prof. Lu Wei</span>
-                <span class="right-meta">June – September 2022</span>
-              </p>
-            <p class="research-text">
-                I worked with Professor Lu Wei to develop a data pipeline for analyzing
-                the Raman spectra of unknown analytes in food samples. I designed a preprocessing
-                and augmentation workflow to generate a robust spectral dataset, which
-                captured the vibrational signatures of a variety of non-homogeneous foods.
-                Using this dataset, I trained and evaluated both k-nearest neighbors (kNN)
-                and random forest classifiers to identify food samples based on their
-                Raman spectra. The resulting models achieved up to 88% classification accuracy.
-            </p>
-        </section>
-
-    </div>
-<main>
-    <div class="main-container">
-        <section class="research-entry">
-            <h2>Reinforcement Learning for Fixed-Wing UAV Navigation in Turbulent Environments</h2>
-            <p class="research-meta">
-                <span class="left-meta">Caltech | Prof. Mory Gharib</span>
-                <span class="right-meta">September 2024 – Present</span>
-              </p>
-            <p class="research-text">
-                I worked under Professor Mory Gharib to design and build the embedded systems onboard
-                a fixed-wing UAV aircraft. I developed a custom handshake between the Cube Orange Plus
-                flight computer and the Jetson Orin Nano on-board computer to reliably transmit ROS
-                messages in turbulent environments. I also helped design and integrate low-cost pitot
-                tubes capable of measuring wind speed at five distributed locations across the airframe.
-                This data fed into a machine learning model we developed to estimate wind dynamics in real time.
-            </p>
-        </section>
-
-        <hr class="divider-line">
-
-        <section class="research-entry">
-            <h2>Improving Spacecraft Fault Diagnosis Using Active Sensing and Sensor Failure Modeling</h2>
-            <p class="research-meta">
-                <span class="left-meta">Caltech | Prof. Soon-Jo Chung</span>
-                <span class="right-meta">June – September 2023</span>
-              </p>
-            <div class="research-images">
-                <img src="resources/research/rgb_to_ir.png" class="satellite-img">
-                <img src="resources/research/satellite.png" class="satellite-img">
-            </div>
-            <p class="research-text">
-                I worked under Professor Soon-Jo Chung to build a physics simulation that models
-                spacecraft kinematics and actuator systems as Markov Decision Problems. I expanded
-                the existing 3-DOF spacecraft model to a 6-DOF model, capable of modeling the
-                spacecraft's attitude and positional state. I integrated this physics engine into
-                the lab's existing fault detection, isolation, and recovery algorithms to identify
-                faulty reaction wheels and actuator systems onboard the spacecraft.
-                <br>
-                <br>
-                Additionally, I developed a cycleGAN model to convert RGB images taken
-                onboard the spacecraft into infrared images. These images were then fed into the 
-                lab's existing FDIR algorithms to isolate and recover from various camera failure
-                modes, including hot pixels and solar glare. The final report for this project 
-                can be found <a href="resources/research/surf_report.pdf" class="plink">here</a>.
-            </p>
-        </section>
-
-        <hr class="divider-line">
-
-        <section class="research-entry">
-            <h2>Machine Learning for Analyte Identification via Raman Spectroscopy</h2>
-            <p class="research-meta">
-                <span class="left-meta">Caltech | Prof. Lu Wei</span>
-                <span class="right-meta">June – September 2022</span>
-              </p>
-            <p class="research-text">
-                I worked with Professor Lu Wei to develop a data pipeline for analyzing
-                the Raman spectra of unknown analytes in food samples. I designed a preprocessing
-                and augmentation workflow to generate a robust spectral dataset, which
-                captured the vibrational signatures of a variety of non-homogeneous foods.
-                Using this dataset, I trained and evaluated both k-nearest neighbors (kNN)
-                and random forest classifiers to identify food samples based on their
-                Raman spectra. The resulting models achieved up to 88% classification accuracy.
-            </p>
-        </section>
-
-    </div>
-
-  </main>
-<footer class="footer">
-    <p>© 2025 Arnauld Martinez. All rights reserved.</p>
-  </footer>
-<body>
-    <header>
-        <nav class="navbar">
-            <div class="navbar-container">
-                <div class="navbar-left">
-                    <a href="index.html" class="nav-logo">Arnauld Martinez</a>
-                </div>
-                <div class="navbar-right">
-                    <a href="research.html" class="nav-link active">Research</a>
-                    <a href="work.html" class="nav-link">Work Experience</a>
-                    <a href="projects.html" class="nav-link">Projects</a>
-                    <a href="resources/resume.pdf" class="nav-link">CV</a>
-                </div>
-            </div>
-        </nav>
-    </header>
-  <main>
-    <div class="main-container">
-        <section class="research-entry">
-            <h2>Reinforcement Learning for Fixed-Wing UAV Navigation in Turbulent Environments</h2>
-            <p class="research-meta">
-                <span class="left-meta">Caltech | Prof. Mory Gharib</span>
-                <span class="right-meta">September 2024 – Present</span>
-              </p>
-            <p class="research-text">
-                I worked under Professor Mory Gharib to design and build the embedded systems onboard
-                a fixed-wing UAV aircraft. I developed a custom handshake between the Cube Orange Plus
-                flight computer and the Jetson Orin Nano on-board computer to reliably transmit ROS
-                messages in turbulent environments. I also helped design and integrate low-cost pitot
-                tubes capable of measuring wind speed at five distributed locations across the airframe.
-                This data fed into a machine learning model we developed to estimate wind dynamics in real time.
-            </p>
-        </section>
-
-        <hr class="divider-line">
-
-        <section class="research-entry">
-            <h2>Improving Spacecraft Fault Diagnosis Using Active Sensing and Sensor Failure Modeling</h2>
-            <p class="research-meta">
-                <span class="left-meta">Caltech | Prof. Soon-Jo Chung</span>
-                <span class="right-meta">June – September 2023</span>
-              </p>
-            <div class="research-images">
-                <img src="resources/research/rgb_to_ir.png" class="satellite-img">
-                <img src="resources/research/satellite.png" class="satellite-img">
-            </div>
-            <p class="research-text">
-                I worked under Professor Soon-Jo Chung to build a physics simulation that models
-                spacecraft kinematics and actuator systems as Markov Decision Problems. I expanded
-                the existing 3-DOF spacecraft model to a 6-DOF model, capable of modeling the
-                spacecraft's attitude and positional state. I integrated this physics engine into
-                the lab's existing fault detection, isolation, and recovery algorithms to identify
-                faulty reaction wheels and actuator systems onboard the spacecraft.
-                <br>
-                <br>
-                Additionally, I developed a cycleGAN model to convert RGB images taken
-                onboard the spacecraft into infrared images. These images were then fed into the 
-                lab's existing FDIR algorithms to isolate and recover from various camera failure
-                modes, including hot pixels and solar glare. The final report for this project 
-                can be found <a href="resources/research/surf_report.pdf" class="plink">here</a>.
-            </p>
-        </section>
-
-        <hr class="divider-line">
-
-        <section class="research-entry">
-            <h2>Machine Learning for Analyte Identification via Raman Spectroscopy</h2>
-            <p class="research-meta">
-                <span class="left-meta">Caltech | Prof. Lu Wei</span>
-                <span class="right-meta">June – September 2022</span>
-              </p>
-            <p class="research-text">
-                I worked with Professor Lu Wei to develop a data pipeline for analyzing
-                the Raman spectra of unknown analytes in food samples. I designed a preprocessing
-                and augmentation workflow to generate a robust spectral dataset, which
-                captured the vibrational signatures of a variety of non-homogeneous foods.
-                Using this dataset, I trained and evaluated both k-nearest neighbors (kNN)
-                and random forest classifiers to identify food samples based on their
-                Raman spectra. The resulting models achieved up to 88% classification accuracy.
-            </p>
-        </section>
-
-    </div>
-
-  </main>
-  
-  <footer class="footer">
-    <p>© 2025 Arnauld Martinez. All rights reserved.</p>
-  </footer>
-  
- 
-</body>
-<html lang="en"><head>
-  <meta charset="UTF-8">
-  <title>Arnauld Martinez Portfolio</title>
-  <link rel="stylesheet" href="styles_research.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Parthorn Ammawat">
+    <title>Parthorn Ammawat</title>
+    <!-- Google Fonts: Lato -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar">
-            <div class="navbar-container">
-                <div class="navbar-left">
-                    <a href="index.html" class="nav-logo">Arnauld Martinez</a>
+        <div class="header-inner">
+            <nav>
+                <a href="/" class="logo">Parthorn Ammawat</a>
+                <button class="hamburger">☰</button>
+                <div class="nav-links">
+                    <a href="/research">Research</a>
+                    <a href="/teaching">Teaching</a>
+                    <a href="/projects">Projects</a>
+                    <a href="/cv">CV</a>
                 </div>
-                <div class="navbar-right">
-                    <a href="research.html" class="nav-link active">Research</a>
-                    <a href="work.html" class="nav-link">Work Experience</a>
-                    <a href="projects.html" class="nav-link">Projects</a>
-                    <a href="resources/resume.pdf" class="nav-link">CV</a>
-                </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
-  <main>
-    <div class="main-container">
-        <section class="research-entry">
-            <h2>Reinforcement Learning for Fixed-Wing UAV Navigation in Turbulent Environments</h2>
-            <p class="research-meta">
-                <span class="left-meta">Caltech | Prof. Mory Gharib</span>
-                <span class="right-meta">September 2024 – Present</span>
-              </p>
-            <p class="research-text">
-                I worked under Professor Mory Gharib to design and build the embedded systems onboard
-                a fixed-wing UAV aircraft. I developed a custom handshake between the Cube Orange Plus
-                flight computer and the Jetson Orin Nano on-board computer to reliably transmit ROS
-                messages in turbulent environments. I also helped design and integrate low-cost pitot
-                tubes capable of measuring wind speed at five distributed locations across the airframe.
-                This data fed into a machine learning model we developed to estimate wind dynamics in real time.
-            </p>
-        </section>
 
-        <hr class="divider-line">
+    <section id="about">
+        <!-- <h2>About Me</h2> -->
+        <p>
+            <img src="assets/img/headshot.jpg" style="float:right; margin-left: 15px; 
+            border-radius: 50%; width: 250px; height: 250px; object-fit: cover;
+            max-width: 100%;" alt="Parthorn Ammawat" />
+        </p>
+        <h2>
+            Quantum Hardware | Integrated Photonics | Caltech EE + APh
+        </h2>
+        <p>
+            My name is Parthorn Ammawat, and I'm a junior at Caltech studying
+            Electrical Engineering and Applied Physics. I'm interested in
+            integrated photonics, circuit QED, and quantum hardware. My focus is
+            on experimental and engineering challenges in quantum computing,
+            particularly advancing superconducting qubits and scaling quantum
+            systems by developing novel devices for improved connectivity,
+            error reduction, and scalability.
+        </p>
+        <p>
+            To achieve these goals, I lead an effort at
+            <a href="https://light.caltech.edu/" target="_blank">Marandi Lab</a>
+            to design and fabricate on-chip coupled optical parametric oscillators,
+            aiming to realize spectral phase transitions and ultimately develop
+            an on-chip Ising machine. In the
+            <a href="https://painterlab.caltech.edu/" target="_blank">Painter Lab</a>,
+            I contribute to a two-node remote entanglement experiment using
+            quantum transducers, focusing on the qubit module, and work on the
+            EM design for the mechanical cat qubits project. For more details,
+            visit my
+            <a href="https://parthorn.github.io/research/">research page</a>.
+        </p>
+        <p>
+            Feel free to contact me at <a href="mailto:parthorn.a@caltech.edu">parthorn.a[at]caltech[dot]edu</a>!
+        </p>
+    </section>
 
-        <section class="research-entry">
-            <h2>Improving Spacecraft Fault Diagnosis Using Active Sensing and Sensor Failure Modeling</h2>
-            <p class="research-meta">
-                <span class="left-meta">Caltech | Prof. Soon-Jo Chung</span>
-                <span class="right-meta">June – September 2023</span>
-              </p>
-            <div class="research-images">
-                <img src="resources/research/rgb_to_ir.png" class="satellite-img">
-                <img src="resources/research/satellite.png" class="satellite-img">
-            </div>
-            <p class="research-text">
-                I worked under Professor Soon-Jo Chung to build a physics simulation that models
-                spacecraft kinematics and actuator systems as Markov Decision Problems. I expanded
-                the existing 3-DOF spacecraft model to a 6-DOF model, capable of modeling the
-                spacecraft's attitude and positional state. I integrated this physics engine into
-                the lab's existing fault detection, isolation, and recovery algorithms to identify
-                faulty reaction wheels and actuator systems onboard the spacecraft.
-                <br>
-                <br>
-                Additionally, I developed a cycleGAN model to convert RGB images taken
-                onboard the spacecraft into infrared images. These images were then fed into the 
-                lab's existing FDIR algorithms to isolate and recover from various camera failure
-                modes, including hot pixels and solar glare. The final report for this project 
-                can be found <a href="resources/research/surf_report.pdf" class="plink">here</a>.
-            </p>
-        </section>
+    <footer>
+        <div class="footer-inner">
+            <p>&copy; 2025 Parthorn Ammawat. All rights reserved.</p>
+        </div>
+    </footer>
 
-        <hr class="divider-line">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.querySelector(".hamburger");
+            const navLinks = document.querySelector(".nav-links");
 
-        <section class="research-entry">
-            <h2>Machine Learning for Analyte Identification via Raman Spectroscopy</h2>
-            <p class="research-meta">
-                <span class="left-meta">Caltech | Prof. Lu Wei</span>
-                <span class="right-meta">June – September 2022</span>
-              </p>
-            <p class="research-text">
-                I worked with Professor Lu Wei to develop a data pipeline for analyzing
-                the Raman spectra of unknown analytes in food samples. I designed a preprocessing
-                and augmentation workflow to generate a robust spectral dataset, which
-                captured the vibrational signatures of a variety of non-homogeneous foods.
-                Using this dataset, I trained and evaluated both k-nearest neighbors (kNN)
-                and random forest classifiers to identify food samples based on their
-                Raman spectra. The resulting models achieved up to 88% classification accuracy.
-            </p>
-        </section>
+            hamburger.addEventListener("click", function () {
+                navLinks.classList.toggle("show");
+            });
+        });
+    </script>
 
-    </div>
+</body>
 
-  </main>
-  
-  <footer class="footer">
-    <p>© 2025 Arnauld Martinez. All rights reserved.</p>
-  </footer>
-  
- 
-</body></html>
+</html>
