@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avi Vadali | Physics</title>
+    <title>Avi Vadali</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -19,11 +20,11 @@
             </button>
             <ul class="nav-links" id="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#publications">Publications</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#ideas">Ideas</a></li>
+                <li><a href="#papers">Papers</a></li>
+                <li><a href="#talks">Talks</a></li>
                 <li><a href="#notes">Notes</a></li>
-                <li><a href="#cv">CV</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -32,107 +33,130 @@
     <section id="home" class="section-home">
         <div class="home-container">
             <div class="home-text">
-                <p class="home-label">Theoretical Physics</p>
+                <p class="home-label">Physics &middot; Theory</p>
                 <h1 class="home-name">Avi Vadali</h1>
-                <p class="home-subtitle">Condensed Matter Physics &amp; Quantum Information</p>
+                <p class="home-subtitle">Condensed Matter &amp; Quantum Information</p>
                 <p class="home-bio">
-                    I am a physicist working at the intersection of condensed matter theory and quantum
-                    information science. My research explores emergent phenomena in strongly correlated
-                    systems, topological phases of matter, and the use of quantum entanglement as a probe
-                    of exotic order. I am broadly interested in how information-theoretic ideas illuminate
-                    the structure of quantum many-body systems.
+                    I am a senior undergraduate at the California Institute of Technology
+                    (class of&nbsp;2026). I work on theoretical
+                    condensed matter physics, with a focus on topological phases of matter and emergent phenomena
+                    in strongly correlated quantum systems. I will begin my PhD in physics in Fall&nbsp;2026.
                 </p>
                 <div class="home-interests">
-                    <span class="tag">Topological Phases</span>
-                    <span class="tag">Quantum Entanglement</span>
-                    <span class="tag">Strongly Correlated Systems</span>
-                    <span class="tag">Non-Equilibrium Dynamics</span>
+                    <span class="tag">Topological order</span>
+                    <span class="tag">Generalized symmetries and anomalies</span>
+                    <span class="tag">Out-of-equilibrium quantum systems</span>
                 </div>
                 <div class="home-links">
-                    <a href="#research" class="btn-primary">Research</a>
-                    <a href="#publications" class="btn-secondary">Publications</a>
-                    <a href="#contact" class="btn-secondary">Contact</a>
+                    <a href="avi_cv.pdf" class="btn-primary" target="_blank" rel="noopener">Download CV</a>
+                    <a href="#papers" class="btn-secondary">Papers</a>
+                    <a href="mailto:avadali@caltech.edu" class="btn-secondary">Email</a>
                 </div>
             </div>
             <div class="home-avatar">
-                <div class="avatar-placeholder">AV</div>
+                <div class="avatar-frame">
+                    <img src="headshot.jpg" alt="Avi Vadali" class="avatar-img">
+                </div>
                 <div class="home-affiliation">
-                    <p class="affil-dept">Department of Physics</p>
-                    <p class="affil-univ">University Name</p>
+                    <p class="affil-primary">California Institute of Technology</p>
+                    <p class="affil-secondary">B.S. Physics &middot; Class of 2026</p>
+                    <p class="affil-next">Incoming Ph.D. &middot; TBD</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ==================== RESEARCH ==================== -->
-    <section id="research" class="section section-alt">
+    <!-- ==================== ABOUT ==================== -->
+    <section id="about" class="section section-alt">
         <div class="container">
-            <h2 class="section-title">Research</h2>
+            <h2 class="section-title">About</h2>
+
+            <div class="about-grid">
+                <div class="about-bio">
+                    <p>
+                        I am a senior at Caltech studying physics, with research interests
+                        centered on theoretical condensed matter physics and quantum information. At the moment,
+                        I am interested in topological phases of matter, generalized symmetries and anomalies, and
+                        out-of-equilibrium quantum systems.
+                    </p>
+                    <p>
+                        Currently I work in the <strong>Jason Alicea group</strong> at Caltech,
+                        studying the stability of topological order to proliferation of
+                        non-Abelian anyons, and in the <strong>Ashvin Vishwanath group</strong>
+                        at Harvard, developing models for emergent symmetries in moir&eacute;
+                        systems. I will be starting a PhD in physics in Fall 2026.
+                    </p>
+                    <p>
+                        In my spare time, I enjoy weightlifting, reading, playing video games,
+                        and walking a lot.
+                    </p>
+                </div>
+
+                <div class="about-side">
+                    <div class="about-block">
+                        <h3 class="block-heading">Education</h3>
+                        <div class="edu-entry">
+                            <span class="edu-inst">TBD</span>
+                            <span class="edu-degree">Ph.D. in Physics &mdash; incoming Fall 2026</span>
+                        </div>
+                        <div class="edu-entry">
+                            <span class="edu-inst">California Institute of Technology</span>
+                            <span class="edu-degree">B.S. in Physics &middot; 2022&ndash;2026</span>
+                            <span class="edu-detail">GPA: 4.1 / 4.3</span>
+                        </div>
+                    </div>
+
+                    <div class="about-block">
+                        <h3 class="block-heading">Honors &amp; Fellowships</h3>
+                        <ul class="honor-list">
+                            <li>
+                                <span class="honor-name">Haren Lee Fisher Memorial Award in Junior Physics</span>
+                                <span class="honor-year">2025</span>
+                            </li>
+                            <li>
+                                <span class="honor-name">Bill Davis SURF Fellowship &mdash; Caltech</span>
+                                <span class="honor-year">2025</span>
+                            </li>
+                            <li>
+                                <span class="honor-name">Barry Goldwater Scholarship Nominee</span>
+                                <span class="honor-year">2024</span>
+                            </li>
+                            <li>
+                                <span class="honor-name">Caltech SURF Fellowship &mdash; Harvard</span>
+                                <span class="honor-year">2024</span>
+                            </li>
+                            <li>
+                                <span class="honor-name">Ernest R. Roberts SURF Fellowship &mdash; Caltech</span>
+                                <span class="honor-year">2023</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== IDEAS ==================== -->
+    <section id="ideas" class="section">
+        <div class="container">
+            <h2 class="section-title">Ideas</h2>
             <p class="section-sub">
-                My work sits at the intersection of condensed matter theory, quantum information, and
-                mathematical physics. I use a combination of field-theoretic, numerical, and algebraic methods.
+                Questions I am presently considering. Some may become papers; others I am simply curious about.
             </p>
-            <div class="research-grid">
 
-                <div class="research-card">
-                    <div class="research-icon">⬡</div>
-                    <h3>Topological Phases of Matter</h3>
-                    <p>
-                        I study phases characterized by topological invariants rather than local order
-                        parameters. Current projects focus on non-Abelian anyons in fractional quantum Hall
-                        systems and their potential as platforms for fault-tolerant quantum computation.
-                    </p>
-                    <div class="research-tags">
-                        <span class="tag-sm">Fractional QH</span>
-                        <span class="tag-sm">Anyons</span>
-                        <span class="tag-sm">Topological Order</span>
-                    </div>
-                </div>
+            <div class="ideas-list">
 
-                <div class="research-card">
-                    <div class="research-icon">&#10216;&#968;&#124;</div>
-                    <h3>Quantum Entanglement &amp; Information</h3>
-                    <p>
-                        Entanglement entropy and quantum information tools provide sharp probes of phase
-                        structure in many-body systems. I develop and apply tensor network methods —
-                        particularly MERA and DMRG — to characterize entanglement in gapless and
-                        topological phases.
-                    </p>
-                    <div class="research-tags">
-                        <span class="tag-sm">Tensor Networks</span>
-                        <span class="tag-sm">Entanglement Entropy</span>
-                        <span class="tag-sm">MERA / DMRG</span>
-                    </div>
-                </div>
-
-                <div class="research-card">
-                    <div class="research-icon">&#8767;</div>
-                    <h3>Non-Equilibrium Quantum Dynamics</h3>
-                    <p>
-                        How do isolated quantum systems thermalize — or fail to? I investigate many-body
-                        localization, Floquet phases, and quantum chaos from the perspective of eigenstate
-                        thermalization and spectral statistics in disordered spin chains.
-                    </p>
-                    <div class="research-tags">
-                        <span class="tag-sm">MBL</span>
-                        <span class="tag-sm">Floquet Systems</span>
-                        <span class="tag-sm">Quantum Chaos</span>
-                    </div>
-                </div>
-
-                <div class="research-card">
-                    <div class="research-icon">&#9672;</div>
-                    <h3>Strongly Correlated Electrons</h3>
-                    <p>
-                        Strongly interacting electrons give rise to unconventional superconductivity,
-                        quantum spin liquids, and heavy-fermion behavior. I use field-theoretic and
-                        numerical approaches to understand spin-liquid phases in frustrated magnets and
-                        moiré heterostructures.
-                    </p>
-                    <div class="research-tags">
-                        <span class="tag-sm">Spin Liquids</span>
-                        <span class="tag-sm">Moiré Systems</span>
-                        <span class="tag-sm">Parton Theory</span>
+                <div class="idea-item">
+                    <div class="idea-num">01</div>
+                    <div class="idea-body">
+                        <p class="idea-text">
+                            Are anyon condensation transitions always continuous? Do they always map to a known 2+1d CFT?
+                        </p>
+                        <div class="idea-tags">
+                            <span class="idea-tag">topological order</span>
+                            <span class="idea-tag">anyon condensation</span>
+                            <span class="idea-tag">CFT</span>
+                        </div>
                     </div>
                 </div>
 
@@ -140,85 +164,141 @@
         </div>
     </section>
 
-    <!-- ==================== PUBLICATIONS ==================== -->
-    <section id="publications" class="section">
+    <!-- ==================== PAPERS ==================== -->
+    <section id="papers" class="section section-alt">
         <div class="container">
-            <h2 class="section-title">Publications</h2>
+            <h2 class="section-title">Papers</h2>
             <p class="section-sub">
-                Selected publications. Full list on
-                <a href="#" class="inline-link">arXiv</a> and
-                <a href="#" class="inline-link">Google Scholar</a>.
+                Full list on
+                <a href="https://scholar.google.com/citations?user=7d_kbWsAAAAJ&hl=en" class="inline-link" target="_blank" rel="noopener">Google Scholar</a> and
+                <a href="http://arxiv.org/a/vadali_a_1" class="inline-link" target="_blank" rel="noopener">arXiv</a>.
+                &dagger;&nbsp;denotes work in preparation.
             </p>
 
             <div class="pub-list">
 
                 <div class="pub-item">
-                    <div class="pub-year">2024</div>
+                    <div class="pub-num">5</div>
                     <div class="pub-content">
-                        <p class="pub-title">Non-Abelian Berry Phases and Topological Degeneracy in Frustrated Quantum Magnets</p>
-                        <p class="pub-authors"><strong>A. Vadali</strong>, J. R. Moore, S. L. Sondhi</p>
-                        <p class="pub-journal"><em>Physical Review Letters</em> 132, 076601 (2024)</p>
-                        <div class="pub-links">
-                            <a href="#" class="pub-link">PDF</a>
-                            <a href="#" class="pub-link">arXiv:2401.12345</a>
-                            <a href="#" class="pub-link">Journal</a>
+                        <p class="pub-title">
+                            Instability of topological order to nucleation of multiple non-Abelian anyon species
+                            <span class="pub-dagger">&dagger;</span>
+                        </p>
+                        <p class="pub-authors"><strong>Vadali, A.</strong>, Vanhove, R., Verresen, R., Alicea, J., Sala, P.</p>
+                        <p class="pub-journal">In preparation (2026)</p>
+                        <div class="pub-labels">
+                            <span class="label-prep">In preparation</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="pub-item">
-                    <div class="pub-year">2023</div>
+                    <div class="pub-num">4</div>
                     <div class="pub-content">
-                        <p class="pub-title">Entanglement Spectrum of Many-Body Localized Phases and the Statistical Mechanics of Eigenvalues</p>
-                        <p class="pub-authors"><strong>A. Vadali</strong>, D. A. Huse</p>
-                        <p class="pub-journal"><em>Physical Review B</em> 108, 134204 (2023)</p>
-                        <div class="pub-links">
-                            <a href="#" class="pub-link">PDF</a>
-                            <a href="#" class="pub-link">arXiv:2309.07821</a>
-                            <a href="#" class="pub-link">Journal</a>
+                        <p class="pub-title">
+                            Berry curvature from plane-wave mixing: A three-band model with emergent symmetries
+                            <span class="pub-dagger">&dagger;</span>
+                        </p>
+                        <p class="pub-authors"><strong>Vadali, A.</strong>, Soejima, T., Vishwanath, A.</p>
+                        <p class="pub-journal">In preparation (2026)</p>
+                        <div class="pub-labels">
+                            <span class="label-prep">In preparation</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="pub-item">
-                    <div class="pub-year">2023</div>
+                    <div class="pub-num">3</div>
                     <div class="pub-content">
-                        <p class="pub-title">Tensor Network Renormalization of Critical Spin Chains: Central Charge from Entanglement Filtering</p>
-                        <p class="pub-authors"><strong>A. Vadali</strong>, G. Vidal, M. Levin</p>
-                        <p class="pub-journal"><em>SciPost Physics</em> 14, 089 (2023)</p>
+                        <p class="pub-title">Equality of cycle-lengths in one- and two-dimensional &sigma; automata</p>
+                        <p class="pub-authors"><strong>Vadali, A.</strong>, Turner, A.</p>
+                        <p class="pub-journal">
+                            <em>Theoretical Computer Science</em> (accepted, 2025) &middot;
+                            arXiv:2502.10898
+                        </p>
                         <div class="pub-links">
-                            <a href="#" class="pub-link">PDF</a>
-                            <a href="#" class="pub-link">arXiv:2211.09412</a>
-                            <a href="#" class="pub-link">Journal</a>
+                            <a href="https://arxiv.org/abs/2502.10898" class="pub-link" target="_blank" rel="noopener">arXiv</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="pub-item">
-                    <div class="pub-year">2022</div>
+                    <div class="pub-num">2</div>
                     <div class="pub-content">
-                        <p class="pub-title">Floquet Topological Phases in Driven Kitaev Chains: Stability and Edge Mode Dynamics</p>
-                        <p class="pub-authors">R. Roy, <strong>A. Vadali</strong>, F. Harper</p>
-                        <p class="pub-journal"><em>Physical Review B</em> 105, 045405 (2022)</p>
+                        <p class="pub-title">Composite subsystem symmetries and decoration of sub-dimensional excitations</p>
+                        <p class="pub-authors"><strong>Vadali, A.</strong>, Wang, Z., Dua, A., Shirley, W., Chen, X.</p>
+                        <p class="pub-journal"><em>SciPost Physics</em>, 17, 071 (2024)</p>
                         <div class="pub-links">
-                            <a href="#" class="pub-link">PDF</a>
-                            <a href="#" class="pub-link">arXiv:2108.04312</a>
-                            <a href="#" class="pub-link">Journal</a>
+                            <a href="https://arxiv.org/abs/2312.04467" class="pub-link" target="_blank" rel="noopener">arXiv</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="pub-item">
-                    <div class="pub-year">2021</div>
+                    <div class="pub-num">1</div>
                     <div class="pub-content">
-                        <p class="pub-title">Quantum Spin Liquids in Moiré Transition Metal Dichalcogenides: A Parton Mean-Field Study</p>
-                        <p class="pub-authors"><strong>A. Vadali</strong>, T. Senthil</p>
-                        <p class="pub-journal"><em>npj Quantum Materials</em> 6, 72 (2021)</p>
+                        <p class="pub-title">Quantum circuit fidelity estimation using machine learning</p>
+                        <p class="pub-authors"><strong>Vadali, A.</strong>, Kshirsagar, R., Shyamsundar, P. et al.</p>
+                        <p class="pub-journal"><em>Quantum Machine Intelligence</em>, 6, 1 (2024)</p>
                         <div class="pub-links">
-                            <a href="#" class="pub-link">PDF</a>
-                            <a href="#" class="pub-link">arXiv:2103.09812</a>
-                            <a href="#" class="pub-link">Journal</a>
+                            <a href="https://arxiv.org/abs/2212.00677" class="pub-link" target="_blank" rel="noopener">arXiv</a>
                         </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TALKS ==================== -->
+    <section id="talks" class="section">
+        <div class="container">
+            <h2 class="section-title">Talks</h2>
+
+            <div class="talk-list">
+
+                <div class="talk-item">
+                    <div class="talk-year">2026</div>
+                    <div class="talk-content">
+                        <p class="talk-title">Instability of topological order to nucleation of multiple non-Abelian anyon species</p>
+                        <p class="talk-venue">APS March Meeting</p>
+                        <span class="talk-label">Contributed talk</span>
+                    </div>
+                </div>
+
+                <div class="talk-item">
+                    <div class="talk-year">2025</div>
+                    <div class="talk-content">
+                        <p class="talk-title">Instability of topological order to nucleation of multiple non-Abelian anyon species</p>
+                        <p class="talk-venue">SURF Seminar Day &middot; California Institute of Technology</p>
+                        <span class="talk-label talk-label-highlight">Finalist &mdash; Doris S. Perpall Speaking Contest</span>
+                    </div>
+                </div>
+
+                <div class="talk-item">
+                    <div class="talk-year">2024</div>
+                    <div class="talk-content">
+                        <p class="talk-title">Berry curvature from plane-wave mixing: emergent symmetries in moir&eacute; systems</p>
+                        <p class="talk-venue">SURF Seminar Day &middot; California Institute of Technology</p>
+                        <span class="talk-label">Contributed talk</span>
+                    </div>
+                </div>
+
+                <div class="talk-item">
+                    <div class="talk-year">2023</div>
+                    <div class="talk-content">
+                        <p class="talk-title">Composite subsystem symmetries and decoration of sub-dimensional excitations</p>
+                        <p class="talk-venue">SURF Seminar Day &middot; California Institute of Technology</p>
+                        <span class="talk-label">Contributed talk</span>
+                    </div>
+                </div>
+
+                <div class="talk-item">
+                    <div class="talk-year">2022</div>
+                    <div class="talk-content">
+                        <p class="talk-title">Quantum circuit fidelity estimation using machine learning</p>
+                        <p class="talk-venue">Senior Capstone Research &middot; Latin School of Chicago</p>
+                        <span class="talk-label">Invited talk</span>
                     </div>
                 </div>
 
@@ -230,138 +310,26 @@
     <section id="notes" class="section section-alt">
         <div class="container">
             <h2 class="section-title">Notes</h2>
-            <p class="section-sub">Technical notes and expository posts on topics I find interesting or think are underexplained in the literature.</p>
+            <p class="section-sub">
+                Informal writeups, expository notes, and half-formed thoughts.
+                More coming as I find time to write things down.
+            </p>
+
             <div class="notes-grid">
 
-                <article class="note-card">
+                <article class="note-card note-card-draft">
                     <div class="note-meta">
-                        <span class="note-date">March 2024</span>
-                        <span class="note-tag">Tensor Networks</span>
+                        <span class="note-tag">Topological order</span>
+                        <span class="note-status">Drafting</span>
                     </div>
-                    <h3 class="note-title">A Pedestrian Introduction to MERA</h3>
+                    <h3 class="note-title">A basic introduction to anyon condensation</h3>
                     <p class="note-excerpt">
-                        The Multi-scale Entanglement Renormalization Ansatz is a variational class of tensor
-                        networks tailored to critical systems. Here I give a self-contained derivation of the
-                        causal cone structure and explain why MERA saturates the logarithmic entanglement
-                        entropy of CFTs.
+                        What does it mean for an anyon to &ldquo;condense&rdquo;? Starting from the
+                        simplest examples in Z<sub>2</sub> toric code, building up to the general framework
+                        of condensable subalgebras and the resulting changes in topological order.
                     </p>
-                    <a href="#" class="note-read">Read note &rarr;</a>
                 </article>
 
-                <article class="note-card">
-                    <div class="note-meta">
-                        <span class="note-date">November 2023</span>
-                        <span class="note-tag">Topology</span>
-                    </div>
-                    <h3 class="note-title">Berry Phase, Chern Numbers, and the TKNN Formula</h3>
-                    <p class="note-excerpt">
-                        A clean derivation of the TKNN formula connecting the Hall conductance to a first
-                        Chern number. Starting from Kubo's formula and using the language of differential
-                        geometry on the Brillouin zone torus.
-                    </p>
-                    <a href="#" class="note-read">Read note &rarr;</a>
-                </article>
-
-                <article class="note-card">
-                    <div class="note-meta">
-                        <span class="note-date">August 2023</span>
-                        <span class="note-tag">MBL</span>
-                    </div>
-                    <h3 class="note-title">Why ETH Fails: An Intuitive Picture of Many-Body Localization</h3>
-                    <p class="note-excerpt">
-                        The Eigenstate Thermalization Hypothesis explains why isolated quantum systems
-                        thermalize. MBL is the striking exception. I outline the intuition behind the
-                        l-bit picture and the area-law entanglement of MBL eigenstates.
-                    </p>
-                    <a href="#" class="note-read">Read note &rarr;</a>
-                </article>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== CV ==================== -->
-    <section id="cv" class="section">
-        <div class="container">
-            <h2 class="section-title">CV</h2>
-            <div class="cv-container">
-                <div class="cv-download">
-                    <p>Full curriculum vitae available as PDF.</p>
-                    <a href="cv.pdf" class="btn-primary" download>Download CV</a>
-                </div>
-                <div class="cv-summary">
-                    <div class="cv-block">
-                        <h3>Education</h3>
-                        <div class="cv-entry">
-                            <span class="cv-year">2018 – 2023</span>
-                            <div>
-                                <p class="cv-role">Ph.D. in Physics</p>
-                                <p class="cv-place">Princeton University</p>
-                                <p class="cv-detail">Advisor: Prof. S. L. Sondhi &mdash; Thesis: <em>Topological Order and Quantum Information in Frustrated Systems</em></p>
-                            </div>
-                        </div>
-                        <div class="cv-entry">
-                            <span class="cv-year">2014 – 2018</span>
-                            <div>
-                                <p class="cv-role">B.S. Physics, minor Mathematics</p>
-                                <p class="cv-place">MIT</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cv-block">
-                        <h3>Positions</h3>
-                        <div class="cv-entry">
-                            <span class="cv-year">2023 –</span>
-                            <div>
-                                <p class="cv-role">Postdoctoral Fellow</p>
-                                <p class="cv-place">Kavli Institute for Theoretical Physics, UC Santa Barbara</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cv-block">
-                        <h3>Awards &amp; Honors</h3>
-                        <ul class="cv-list">
-                            <li>NSF Graduate Research Fellowship (2019)</li>
-                            <li>Princeton Physics Department Prize for Outstanding Thesis (2023)</li>
-                            <li>MIT Physics Award for Excellence (2018)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== CONTACT ==================== -->
-    <section id="contact" class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <div class="contact-container">
-                <p class="contact-text">
-                    I am happy to discuss research, collaborations, or answer questions about my work.
-                    The best way to reach me is by email.
-                </p>
-                <div class="contact-items">
-                    <div class="contact-item">
-                        <span class="contact-label">Email</span>
-                        <a href="mailto:avadali@kitp.ucsb.edu" class="contact-value">avadali@kitp.ucsb.edu</a>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-label">Office</span>
-                        <span class="contact-value">Kohn Hall 210, KITP &mdash; UC Santa Barbara</span>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-label">arXiv</span>
-                        <a href="#" class="contact-value">arXiv author page</a>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-label">Scholar</span>
-                        <a href="#" class="contact-value">Google Scholar profile</a>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-label">GitHub</span>
-                        <a href="#" class="contact-value">github.com/avadali</a>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -369,7 +337,11 @@
     <!-- ==================== FOOTER ==================== -->
     <footer>
         <div class="footer-container">
-            <p>&copy; 2024 Avi Vadali &mdash; Built with HTML &amp; CSS</p>
+            <p>
+                Avi Vadali &middot;
+                <a href="mailto:avadali@caltech.edu" class="footer-link">avadali@caltech.edu</a>
+                &middot; &copy; 2026
+            </p>
         </div>
     </footer>
 
