@@ -321,7 +321,23 @@ a { color: inherit; text-decoration: none; }
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center 15%;
+    object-position: center top;
+}
+
+.avatar-placeholder {
+    background: var(--accent-dim);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar-initials {
+    font-family: var(--font-serif);
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.05em;
+    user-select: none;
 }
 
 .home-affiliation { text-align: center; }
