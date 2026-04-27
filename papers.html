@@ -6,121 +6,123 @@
     <title>Papers — Avi Vadali</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<nav id="navbar">
-    <div class="nav-container">
-        <a href="index.html" class="nav-brand">Avi Vadali</a>
-        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
-            <span></span><span></span><span></span>
-        </button>
-        <ul class="nav-links" id="nav-links">
+<aside class="side-bar" id="sidebar">
+    <div class="site-header">
+        <a href="index.html" class="site-title">Avi Vadali</a>
+        <p class="site-tagline">Theoretical Condensed Matter</p>
+    </div>
+
+    <nav class="site-nav">
+        <ul class="nav-list">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="ideas.html">Ideas</a></li>
             <li><a href="papers.html">Papers</a></li>
             <li><a href="talks.html">Talks</a></li>
-            <li><a href="notes.html">Notes</a></li>
         </ul>
-    </div>
-</nav>
+    </nav>
 
-<main class="page">
-    <div class="container">
+    <footer class="site-footer">
+        <a href="mailto:avadali@caltech.edu">avadali@caltech.edu</a><br>
+        Pasadena, CA
+    </footer>
+</aside>
+<div class="side-bar-scrim" id="sidebar-scrim"></div>
 
-        <div class="page-header">
-            <p class="page-header-eyebrow">Research output</p>
-            <h1 class="page-header-title">Papers</h1>
-            <p class="page-header-desc">
+<div class="main">
+    <header class="main-header">
+        <button class="menu-button" id="menu-button" aria-label="Toggle navigation">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <span class="main-header-title">Papers</span>
+    </header>
+
+    <div class="main-content-wrap">
+        <div class="main-content">
+
+            <h1 class="page-title">Papers</h1>
+            <p class="page-lead">
                 Full list on
                 <a href="https://scholar.google.com/citations?user=7d_kbWsAAAAJ&hl=en" class="inline-link" target="_blank" rel="noopener">Google Scholar</a>
                 and
                 <a href="http://arxiv.org/a/vadali_a_1" class="inline-link" target="_blank" rel="noopener">arXiv</a>.
                 &dagger;&nbsp;denotes work in preparation.
             </p>
-        </div>
 
-        <div class="pub-list">
+            <div class="pub-list">
 
-            <div class="pub-item">
-                <div class="pub-num">5</div>
-                <div class="pub-content">
-                    <p class="pub-title">
-                        Instability of topological order to nucleation of multiple non-Abelian anyon species
-                        <span class="pub-dagger">&dagger;</span>
-                    </p>
-                    <p class="pub-authors"><strong>Vadali, A.</strong>, Vanhove, R., Verresen, R., Alicea, J., Sala, P.</p>
-                    <p class="pub-journal">In preparation (2026)</p>
-                    <div class="pub-row">
-                        <span class="label-prep">In preparation</span>
+                <div class="pub">
+                    <div class="pub-num">5</div>
+                    <div>
+                        <p class="pub-title">
+                            Instability of topological order to nucleation of multiple non-Abelian anyon species
+                            <span class="pub-dagger">&dagger;</span>
+                        </p>
+                        <p class="pub-authors"><strong>Vadali, A.</strong>, Vanhove, R., Verresen, R., Alicea, J., Sala, P.</p>
+                        <p class="pub-journal">In preparation (2026)</p>
+                        <div class="pub-row">
+                            <span class="label-prep">In preparation</span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="pub-item">
-                <div class="pub-num">4</div>
-                <div class="pub-content">
-                    <p class="pub-title">
-                        Berry curvature from plane-wave mixing: a three-band model with emergent symmetries
-                        <span class="pub-dagger">&dagger;</span>
-                    </p>
-                    <p class="pub-authors"><strong>Vadali, A.</strong>, Soejima, T., Vishwanath, A.</p>
-                    <p class="pub-journal">In preparation (2026)</p>
-                    <div class="pub-row">
-                        <span class="label-prep">In preparation</span>
+                <div class="pub">
+                    <div class="pub-num">4</div>
+                    <div>
+                        <p class="pub-title">
+                            Berry curvature from plane-wave mixing: a three-band model with emergent symmetries
+                            <span class="pub-dagger">&dagger;</span>
+                        </p>
+                        <p class="pub-authors"><strong>Vadali, A.</strong>, Soejima, T., Vishwanath, A.</p>
+                        <p class="pub-journal">In preparation (2026)</p>
+                        <div class="pub-row">
+                            <span class="label-prep">In preparation</span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="pub-item">
-                <div class="pub-num">3</div>
-                <div class="pub-content">
-                    <p class="pub-title">Equality of cycle-lengths in one- and two-dimensional &#x3C3; automata</p>
-                    <p class="pub-authors"><strong>Vadali, A.</strong>, Turner, A.</p>
-                    <p class="pub-journal"><em>Theoretical Computer Science</em>, 1074, 115897 (2026)</p>
-                    <div class="pub-row">
-                        <a href="https://arxiv.org/abs/2502.10898" class="pub-link" target="_blank" rel="noopener">arXiv:2502.10898</a>
+                <div class="pub">
+                    <div class="pub-num">3</div>
+                    <div>
+                        <p class="pub-title">Equality of cycle-lengths in one- and two-dimensional &#x3C3; automata</p>
+                        <p class="pub-authors"><strong>Vadali, A.</strong>, Turner, A.</p>
+                        <p class="pub-journal"><em>Theoretical Computer Science</em>, 1074, 115897 (2026)</p>
+                        <div class="pub-row">
+                            <a href="https://arxiv.org/abs/2502.10898" class="pub-link" target="_blank" rel="noopener">arXiv:2502.10898</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="pub-item">
-                <div class="pub-num">2</div>
-                <div class="pub-content">
-                    <p class="pub-title">Composite subsystem symmetries and decoration of sub-dimensional excitations</p>
-                    <p class="pub-authors"><strong>Vadali, A.</strong>, Wang, Z., Dua, A., Shirley, W., Chen, X.</p>
-                    <p class="pub-journal"><em>SciPost Physics</em>, 17, 071 (2024)</p>
-                    <div class="pub-row">
-                        <a href="https://arxiv.org/abs/2312.04467" class="pub-link" target="_blank" rel="noopener">arXiv:2312.04467</a>
+                <div class="pub">
+                    <div class="pub-num">2</div>
+                    <div>
+                        <p class="pub-title">Composite subsystem symmetries and decoration of sub-dimensional excitations</p>
+                        <p class="pub-authors"><strong>Vadali, A.</strong>, Wang, Z., Dua, A., Shirley, W., Chen, X.</p>
+                        <p class="pub-journal"><em>SciPost Physics</em>, 17, 071 (2024)</p>
+                        <div class="pub-row">
+                            <a href="https://arxiv.org/abs/2312.04467" class="pub-link" target="_blank" rel="noopener">arXiv:2312.04467</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="pub-item">
-                <div class="pub-num">1</div>
-                <div class="pub-content">
-                    <p class="pub-title">Quantum circuit fidelity estimation using machine learning</p>
-                    <p class="pub-authors"><strong>Vadali, A.</strong>, Kshirsagar, R., Shyamsundar, P., et al.</p>
-                    <p class="pub-journal"><em>Quantum Machine Intelligence</em>, 6, 1 (2024)</p>
-                    <div class="pub-row">
-                        <a href="https://arxiv.org/abs/2212.00677" class="pub-link" target="_blank" rel="noopener">arXiv:2212.00677</a>
+                <div class="pub">
+                    <div class="pub-num">1</div>
+                    <div>
+                        <p class="pub-title">Quantum circuit fidelity estimation using machine learning</p>
+                        <p class="pub-authors"><strong>Vadali, A.</strong>, Kshirsagar, R., Shyamsundar, P., et al.</p>
+                        <p class="pub-journal"><em>Quantum Machine Intelligence</em>, 6, 1 (2024)</p>
+                        <div class="pub-row">
+                            <a href="https://arxiv.org/abs/2212.00677" class="pub-link" target="_blank" rel="noopener">arXiv:2212.00677</a>
+                        </div>
                     </div>
                 </div>
+
             </div>
 
         </div>
     </div>
-</main>
-
-<footer>
-    <div class="footer-inner">
-        <p>Avi Vadali &middot; <a href="mailto:avadali@caltech.edu" class="footer-link">avadali@caltech.edu</a> &middot; &copy; 2026</p>
-        <span>Pasadena, CA</span>
-    </div>
-</footer>
+</div>
 
 <script src="script.js"></script>
 </body>

@@ -6,90 +6,99 @@
     <title>Avi Vadali</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<nav id="navbar">
-    <div class="nav-container">
-        <a href="index.html" class="nav-brand">Avi Vadali</a>
-        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
-            <span></span><span></span><span></span>
-        </button>
-        <ul class="nav-links" id="nav-links">
+<aside class="side-bar" id="sidebar">
+    <div class="site-header">
+        <a href="index.html" class="site-title">Avi Vadali</a>
+        <p class="site-tagline">Theoretical Condensed Matter</p>
+    </div>
+
+    <nav class="site-nav">
+        <ul class="nav-list">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="ideas.html">Ideas</a></li>
             <li><a href="papers.html">Papers</a></li>
             <li><a href="talks.html">Talks</a></li>
-            <li><a href="notes.html">Notes</a></li>
         </ul>
-    </div>
-</nav>
+    </nav>
 
-<section class="home-hero">
-    <div class="home-container">
-        <div class="home-text">
-            <p class="home-label">Theoretical Physics</p>
-            <h1 class="home-name">Avi Vadali</h1>
-            <p class="home-subtitle">Condensed Matter &amp; Quantum Information</p>
-            <p class="home-bio">
-                I am a senior at Caltech working on theoretical condensed matter physics.
-                Right now I think mostly about what happens to topological phases of matter when their
-                anyonic excitations proliferate — and what that means for storing quantum information.
-                I will begin my PhD at MIT in fall&nbsp;2026.
-            </p>
-            <div class="home-interests">
-                <span class="tag">Topological order</span>
-                <span class="tag">Non-Abelian anyons</span>
-                <span class="tag">Generalized symmetries</span>
-                <span class="tag">Quantum error correction</span>
-                <span class="tag">Moiré systems</span>
-            </div>
-            <div class="home-links">
-                <a href="mailto:avadali@caltech.edu" class="home-link">
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                    Email
-                </a>
-                <a href="http://arxiv.org/a/vadali_a_1" class="home-link" target="_blank" rel="noopener">
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/></svg>
-                    arXiv
-                </a>
-                <a href="https://scholar.google.com/citations?user=7d_kbWsAAAAJ&hl=en" class="home-link" target="_blank" rel="noopener">
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-                    Scholar
-                </a>
-                <a href="https://github.com/aviVadali" class="home-link" target="_blank" rel="noopener">
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-                    GitHub
-                </a>
-                <a href="avi_cv.pdf" class="home-link" target="_blank" rel="noopener">
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                    CV
-                </a>
-            </div>
+    <footer class="site-footer">
+        <a href="mailto:avadali@caltech.edu">avadali@caltech.edu</a><br>
+        Pasadena, CA
+    </footer>
+</aside>
+<div class="side-bar-scrim" id="sidebar-scrim"></div>
+
+<div class="main">
+    <header class="main-header">
+        <button class="menu-button" id="menu-button" aria-label="Toggle navigation">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <span class="main-header-title">Avi Vadali</span>
+    </header>
+
+    <div class="main-content-wrap">
+        <div class="main-content">
+
+            <section class="hero">
+                <div>
+                    <p class="hero-eyebrow">Theoretical Physics</p>
+                    <h1 class="hero-name">Avi Vadali</h1>
+                    <p class="hero-subtitle">Condensed Matter &amp; Quantum Information</p>
+                    <p class="hero-bio">
+                        I am a senior at Caltech working on theoretical condensed matter physics.
+                        Right now I think mostly about what happens to topological phases of matter when their
+                        anyonic excitations proliferate &mdash; and what that means for storing quantum information.
+                        I will begin my PhD at MIT in fall&nbsp;2026.
+                    </p>
+                    <p class="hero-bio">
+                        I grew up in Chicago, IL. Outside physics I enjoy weightlifting, ultimate frisbee, reading,
+                        and generally being outdoors.
+                    </p>
+                    <div class="hero-tags">
+                        <span class="tag">Topological phases</span>
+                        <span class="tag">Generalized symmetries</span>
+                        <span class="tag">Out-of-equilibrium phases</span>
+                        <span class="tag">Quantum error correction</span>
+                    </div>
+                    <div class="hero-links">
+                        <a href="mailto:avadali@caltech.edu" class="btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            Email
+                        </a>
+                        <a href="http://arxiv.org/a/vadali_a_1" class="btn" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                            arXiv
+                        </a>
+                        <a href="https://scholar.google.com/citations?user=7d_kbWsAAAAJ&hl=en" class="btn" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                            Scholar
+                        </a>
+                        <a href="https://github.com/aviVadali" class="btn" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                            GitHub
+                        </a>
+                        <a href="avi_cv.pdf" class="btn" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                            CV
+                        </a>
+                    </div>
+                </div>
+
+                <aside class="hero-aside">
+                    <div class="avatar"><span>AV</span></div>
+                    <div class="affil">
+                        <p class="affil-primary">California Institute of Technology</p>
+                        <p>B.S. Physics &middot; Class of 2026</p>
+                        <p class="affil-next">Incoming Ph.D. &rarr; MIT</p>
+                    </div>
+                </aside>
+            </section>
+
         </div>
-
-        <div class="home-aside">
-            <div class="avatar-frame avatar-placeholder">
-                <span class="avatar-initials">AV</span>
-            </div>
-            <div class="home-affil">
-                <p class="affil-primary">California Institute of Technology</p>
-                <p class="affil-secondary">B.S. Physics &middot; Class of 2026</p>
-                <p class="affil-next">Incoming Ph.D. &rarr; MIT</p>
-            </div>
-        </div>
     </div>
-</section>
-
-<footer>
-    <div class="footer-inner">
-        <p>Avi Vadali &middot; <a href="mailto:avadali@caltech.edu" class="footer-link">avadali@caltech.edu</a> &middot; &copy; 2026</p>
-        <span>Pasadena, CA</span>
-    </div>
-</footer>
+</div>
 
 <script src="script.js"></script>
 </body>
