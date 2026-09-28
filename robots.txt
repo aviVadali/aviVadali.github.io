@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://avivadali.github.io/sitemap.xml
