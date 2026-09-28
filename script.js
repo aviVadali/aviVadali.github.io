@@ -1,37 +1,15 @@
-// Highlight active sidebar link by current filename
-(function () {
-    const file = window.location.pathname.split('/').pop() || 'index.html';
-    document.querySelectorAll('.nav-list a').forEach(link => {
-        const href = link.getAttribute('href');
-        if (href === file || (file === '' && href === 'index.html')) {
-            link.classList.add('active');
-        }
+// Keep the research navigation state accurate when arriving at an anchor.
+(() => {
+  const links = document.querySelectorAll('nav a');
+  const updateNavigation = () => {
+    const page = location.pathname.split('/').pop() || 'index.html';
+    const current = page === 'index.html' && location.hash === '#research'
+      ? 'index.html#research' : page;
+    links.forEach(link => {
+      if (link.getAttribute('href') === current) link.setAttribute('aria-current', 'page');
+      else link.removeAttribute('aria-current');
     });
-})();
-
-// Mobile sidebar drawer
-(function () {
-    const button  = document.getElementById('menu-button');
-    const sidebar = document.getElementById('sidebar');
-    const scrim   = document.getElementById('sidebar-scrim');
-    if (!button || !sidebar || !scrim) return;
-
-    const open  = () => { sidebar.classList.add('open');    scrim.classList.add('open'); };
-    const close = () => { sidebar.classList.remove('open'); scrim.classList.remove('open'); };
-
-    button.addEventListener('click', e => {
-        e.stopPropagation();
-        sidebar.classList.contains('open') ? close() : open();
-    });
-    scrim.addEventListener('click', close);
-
-    sidebar.querySelectorAll('a').forEach(a => {
-        a.addEventListener('click', () => {
-            if (window.matchMedia('(max-width: 800px)').matches) close();
-        });
-    });
-
-    window.addEventListener('resize', () => {
-        if (window.innerWidth > 800) close();
-    });
+  };
+  updateNavigation();
+  window.addEventListener('hashchange', updateNavigation);
 })();
